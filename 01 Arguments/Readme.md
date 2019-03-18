@@ -1,4 +1,4 @@
-# Arguments
+# 01. Arguments
 In this assignment you will get to use the argument input. Arguments can be given in the command line to change variables or set modes.
 
 01. Print a predefined string when you use `-o`

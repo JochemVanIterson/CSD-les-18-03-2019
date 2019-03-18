@@ -3,6 +3,7 @@ Library to play wav, aiff and mp3 files through jack. Wav and aiff can be multic
 
 01. Make it compile :-)
 02. Try playing a few files. Figure out how to parse the filename you want to be played.
+02. Play a file with a different samplerate than Jack has. What happens?
 
 
 # Install

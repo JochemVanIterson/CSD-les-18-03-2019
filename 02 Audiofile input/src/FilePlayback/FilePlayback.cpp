@@ -49,7 +49,9 @@ int FilePlayback::getSampleRate(){
 AudioFile::AudioBuffer FilePlayback::getBuffer(){
   return audioFile->samples;
 }
-void FilePlayback::fillBuffer(std::vector<jack_default_audio_sample_t*> *outputBuffers, jack_nframes_t nframes, bool overwrite){
+void FilePlayback::fillBuffer(std::vector<jack_default_audio_sample_t*> *outputBuffers,
+    jack_nframes_t nframes, bool overwrite
+){
   for(unsigned int i = 0; i < nframes; i++) {
     for(int channel = 0; channel<numChannels && channel<outputBuffers->size(); channel++){
       if(isPlaying && playHead<filesize){
